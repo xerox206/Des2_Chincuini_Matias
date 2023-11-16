@@ -1,0 +1,27 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="PaginaMaestra.master.cs" Inherits="Des2_Chincuini_Matias.PaginaMaestra" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <div id="navbar">
+                <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/Registracion.aspx">Registracion</asp:HyperLink>
+                <br />
+                <asp:HyperLink ID="HyperLink2" runat="server" NavigateUrl="~/GestionDeArchivos.aspx">Gestion de Archivos</asp:HyperLink>
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <div id="footer">
+               FOOTER            
+            </div>
+        </div>
+    </form>
+</body>
+</html>
